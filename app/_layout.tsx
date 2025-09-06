@@ -3,8 +3,8 @@ import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 
-import "./global.css";
-import GlobalProvider from "@/lib/global-provider";
+import "../global.css";
+// import GlobalProvider from "@/lib/global-provider";
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -27,8 +27,7 @@ export default function RootLayout() {
   }
 
   return (
-    <GlobalProvider>
+    // <GlobalProvider>
       <Stack screenOptions={{ headerShown: false }} />
-    </GlobalProvider>
   );
 }
